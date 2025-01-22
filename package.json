@@ -1,6 +1,6 @@
 {
   "name": "zip-folder",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "zips a folder and calls your callback when it's done",
   "main": "index.js",
   "scripts": {
@@ -21,11 +21,18 @@
   },
   "homepage": "https://github.com/sole/node-zip-folder",
   "dependencies": {
-    "archiver": "^0.11.0"
+    "archiver": "^7.0.1",
+    "unzipper": "^0.12.3"
   },
   "devDependencies": {
+    "glob": "^7.1.7",
+    "graceful-fs": "^4.2.11",
+    "gulp": "^5.0.0",
     "nodeunit": "^0.9.0",
     "temporary": "0.0.8",
-    "unzip": "^0.1.11"
+    "unzipper": "^0.12.3"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.11"
   }
 }
